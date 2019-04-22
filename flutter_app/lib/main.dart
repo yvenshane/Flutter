@@ -6,6 +6,7 @@ import './Demo/BottomNavigationBarDemo.dart';
 import './Demo/BasicDemo.dart';
 import './Demo/LayoutDemo.dart';
 import './Demo/ViewDemo.dart';
+import './Demo/SliverDemo.dart';
 
 void main() => runApp(App());
 
@@ -70,7 +71,7 @@ class Home extends StatelessWidget {
             ListViewDemo(),
             BasicDemo(),
             LayoutDemo(),
-            ViewDemo(),
+            SliverDemo(),
           ],
         ),
         drawer: DrawerDemo(),
