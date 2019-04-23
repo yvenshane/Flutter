@@ -7,6 +7,7 @@ import './Demo/BasicDemo.dart';
 import './Demo/LayoutDemo.dart';
 import './Demo/ViewDemo.dart';
 import './Demo/SliverDemo.dart';
+import './Demo/NavigatorDemo.dart';
 
 void main() => runApp(App());
 
@@ -15,12 +16,16 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
-      home: Home(),
+//      home: NavigatorDemo(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => Home(),
+        '/about': (context) => Page(title: 'About'),
+      },
       theme: ThemeData(
-        primarySwatch: Colors.yellow,
-        highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
-        splashColor: Colors.white70
-      ),
+          primarySwatch: Colors.yellow,
+          highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
+          splashColor: Colors.white70),
     );
   }
 }
@@ -80,4 +85,3 @@ class Home extends StatelessWidget {
     );
   }
 }
-
