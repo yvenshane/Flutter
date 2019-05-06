@@ -3,6 +3,11 @@ import './FormsDemo.dart';
 import './ButtonDemo.dart';
 import './FloatingActionButtonDemo.dart';
 import './PopupMenuButtonDemo.dart';
+import './CheckboxDemo.dart';
+import './RadioDemo.dart';
+import './SwitchDemo.dart';
+import './SliderDemo.dart';
+import './DateTimeDemo.dart';
 
 class MaterialComponents extends StatelessWidget {
   @override
@@ -14,6 +19,11 @@ class MaterialComponents extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
+          ListItem(title: 'DateTime', page: DateTimeDemo()),
+          ListItem(title: 'Slider', page: SliderDemo()),
+          ListItem(title: 'Switch', page: SwitchDemo()),
+          ListItem(title: 'Radio', page: RadioDemo()),
+          ListItem(title: 'Checkbox', page: CheckboxDemo()),
           ListItem(title: 'PopupMenuButton', page: PopupMenuButtonDemo()),
           ListItem(title: 'FloatingActionButton', page: FloatingActionButtonDemo()),
           ListItem(title: 'Button', page: ButtonDemo()),
