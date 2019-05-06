@@ -11,7 +11,7 @@ class SimpleDialogDemo extends StatefulWidget {
 }
 
 class _SimpleDialogDemoState extends State<SimpleDialogDemo> {
-  String _choice = 'null';
+  String _choice = 'Noting';
 
   Future _openSimpleDialog () async {
     final option = await showDialog(
